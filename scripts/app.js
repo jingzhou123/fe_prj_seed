@@ -1,3 +1,3 @@
-define(['./utils.js'], function (utils) {
-  document.write('hello ' + utils);
+require(['./modal'], function() {
+  console.log('app loaded');  
 });

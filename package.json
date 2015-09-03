@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "install": "^0.1.8",
+    "jquery": "^2.1.4",
     "nouislider": "leongersen/noUiSlider",
     "npm": "^2.13.2",
     "react": "^0.13.3"

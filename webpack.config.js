@@ -1,13 +1,10 @@
 var webpack = require('webpack');
 
 module.exports = {
-    entry: {
-      app: './scripts/app.js',
-      vendor: []
-    },
+    entry: {main: './scripts/app.js'},
     output: {
-        path: './build',
-        //publicPath: '/',//TODO for CDN path
+        path: __dirname + '/build',
+        publicPath: '/build/',
         filename: '[name].js',
         //sourceMapFilename: '[name].[hash].map.js',
         //libraryTarget: 'umd'//convert amd, commonjs, ..., to umd
@@ -22,9 +19,5 @@ module.exports = {
             {test: /\.less$/,
              loader: 'style/useable!css?sourceMap!less-loader?sourceMap=true'}
         ]
-    },
-    plugins: [
-       new webpack.optimize.CommonsChunkPlugin(/* chunkName= */"vendor",
-        /* filename= */"vendor.js")
-    ]
+    }
 };
