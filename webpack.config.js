@@ -6,6 +6,7 @@ module.exports = {
         path: __dirname + '/build',
         publicPath: '/build/',
         filename: '[name].js',
+        chunkFilename: '[id].[chunkhash].bundle.js'
         //sourceMapFilename: '[name].[hash].map.js',
         //libraryTarget: 'umd'//convert amd, commonjs, ..., to umd
     },

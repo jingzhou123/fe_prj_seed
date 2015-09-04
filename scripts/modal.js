@@ -1,9 +1,4 @@
-require.ensure(['./utils'], function() {
+require.ensure(['./utils'], function(require) {
   var $ = require('jquery');
-  
-  $(document).on('click', 'button', function(e) {
-    var util = require('./utils');
-    console.log('btn clicked showd from: ', util);  
-  });
   console.log('modal loaded');
 });
